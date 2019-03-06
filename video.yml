@@ -1,0 +1,6 @@
+---
+ - hosts: local
+   tasks:
+   - name: Checking connection
+     ping:
+     
