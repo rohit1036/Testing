@@ -4,12 +4,12 @@
     tasks:
     - name: install apache2
       apt: name=nginx state=present
-    - name: copy temprory file
-      copy: src=/var/lib/awx/local/text.txt dest=/var/lib/awx/local/temp1.txt
+    #- name: copy temprory file
+     # copy: src=/var/lib/awx/local/text.txt dest=/var/lib/awx/local/temp1.txt
 #       notify:
 #       - restart nginx
-#     - name: restart and enable apache service
-#       service: name=nginx state=restarted enabled=yes
+    - name: restart and enable apache service
+      service: name=nginx state=restarted enabled=yes
 #     handlers:
 #       - name: restart nginx
 #         service: name=nginx state=restarted
