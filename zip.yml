@@ -1,0 +1,12 @@
+---
+  - name: zip files
+    hosts: localhost1
+    vars:
+      date: "{{ lookup('pipe', 'date +%Y%m%d-%H%M') }}"
+    tasks:
+      - name: Ansible zip file example
+        archive:
+          path:
+            - /home/master/local
+          dest: /home/master/local/zippedfile-{{date}}.zip
+          format: zip
