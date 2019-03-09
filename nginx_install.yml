@@ -1,5 +1,5 @@
 ---
-  - hosts: localhost1
+  - hosts: localhost
     become: true
     tasks:
     - name: install apache2
