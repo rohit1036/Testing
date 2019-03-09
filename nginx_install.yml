@@ -4,7 +4,7 @@
     tasks:
     - name: install apache2
       apt: name=nginx state=present
-    -name: Debugging 
+    - name: Debugging 
      debug: 
       msg: "Debugging is going on"
     #- name: copy temprory file
