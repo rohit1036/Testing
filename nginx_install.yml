@@ -5,8 +5,8 @@
     - name: install apache2
       apt: name=nginx state=present
     - name: Debugging 
-     debug: 
-      msg: "Debugging is going on"
+      debug: 
+       msg: "Debugging is going on"
     #- name: copy temprory file
      # copy: src=/var/lib/awx/local/text.txt dest=/var/lib/awx/local/temp1.txt
 #       notify:
